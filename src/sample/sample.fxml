@@ -14,90 +14,74 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<GridPane alignment="center" hgap="10" minHeight="-Infinity" minWidth="-Infinity" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
-         <children>
-            <Accordion>
-              <panes>
-                <TitledPane animated="false" text="test #1">
-                  <content>
-                    <AnchorPane AnchorPane.bottomAnchor="-16.0">
-                           <children>
-                        <ComboBox fx:id="list" layoutY="25.0" />
-                               <TextField fx:id="text_field1" />
-                           </children>
-                        </AnchorPane>
-                  </content>
-                     <graphic>
-                        <Button fx:id="button1" mnemonicParsing="false" onAction="#press_but1" text="press me" />
-                     </graphic>
-                </TitledPane>
-                <TitledPane animated="false" text="test #2">
-                  <content>
-                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="300.0">
-                           <children>
-                              <TextField fx:id="text_field2" />
-                              <Button fx:id="button21" layoutY="25.0" mnemonicParsing="false" onAction="#press_but21" text="press me">
-                        </Button>
-                               <Button fx:id="button22" layoutY="60.0" mnemonicParsing="false" onAction="#press_but22" text="no, press me" />
-                           </children>
-                        </AnchorPane>
-                  </content>
-                </TitledPane>
-                <TitledPane animated="false" text="test #3">
-                  <content>
-                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                           <children>
-                              <TextField fx:id="text_field3" />
-                        <RadioButton fx:id="radio_button_1" layoutY="30.0" mnemonicParsing="false" text="1" />
-                        <RadioButton fx:id="radio_button_2" layoutY="60.0" mnemonicParsing="false" text="2" />
-                        <RadioButton fx:id="radio_button_3" layoutY="90.0" mnemonicParsing="false" text="3" />
-                           </children>
-                        </AnchorPane>
-                  </content>
-                     <graphic>
-                        <Button fx:id="button3" mnemonicParsing="false" onAction="#press_but3" text="press me" />
-                     </graphic>
-                </TitledPane>
-                <TitledPane animated="false" text="test #4">
-                    <content>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                           <children>
-                              <TextField fx:id="text_field4" />
-                               <CheckBox fx:id="check_box_1" layoutY="30.0" mnemonicParsing="false" text="1" />
-                               <CheckBox fx:id="check_box_2" layoutY="60.0" mnemonicParsing="false" text="2" />
-                               <CheckBox fx:id="check_box_3" layoutY="90.0" mnemonicParsing="false" text="3" />
-                           </children>
-                        </AnchorPane>
-                    </content>
-                    <graphic>
-                        <Button fx:id="button4" mnemonicParsing="false" onAction="#press_but4" text="press me" />
-                    </graphic>
-                </TitledPane>
-                  <TitledPane animated="false" text="test #5">
-                 <content>
-                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                           <children>
-                              <TextField fx:id="text_field5" layoutX="120.0" />
-                        <TableView fx:id="table_5" editable="true" layoutY="31.0" prefHeight="199.0" prefWidth="302.0">
-                          <columns>
-                            <TableColumn fx:id="col1" prefWidth="156.0" text="First" />
-                            <TableColumn fx:id="col2" prefWidth="145.0" text="Second" />
-                          </columns>
-                        </TableView>
-                        <Button fx:id="button51" mnemonicParsing="false" onAction="#press_but51" text="1" />
-                        <Button fx:id="button52" layoutX="40.0" mnemonicParsing="false" text="2" onAction="#press_but52" />
-                        <Button fx:id="button53" layoutX="80.0" mnemonicParsing="false" text="3" onAction="#press_but53"/>
-                           </children>
-                        </AnchorPane>
-                 </content>
-             </TitledPane>
-              </panes>
-            </Accordion>
-         </children>
-   <columnConstraints>
-      <ColumnConstraints />
-   </columnConstraints>
-   <rowConstraints>
-      <RowConstraints />
-   </rowConstraints>
+<GridPane alignment="center" hgap="10" minHeight="-Infinity" minWidth="-Infinity" vgap="10"
+          xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="sample.Controller">
+    <columnConstraints>
+        <ColumnConstraints/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints/>
+    </rowConstraints>
+    <Accordion>
+        <panes>
+            <TitledPane animated="false" text="test #1">
+                <graphic>
+                    <Button fx:id="button1" mnemonicParsing="false" onAction="#pressBut1" text="press me"/>
+                </graphic>
+                <AnchorPane AnchorPane.bottomAnchor="-16.0">
+                    <ComboBox fx:id="list" layoutY="25.0"/>
+                    <TextField fx:id="textField1"/>
+                </AnchorPane>
+            </TitledPane>
+            <TitledPane animated="false" text="test #2">
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="300.0">
+                    <TextField fx:id="textField2"/>
+                    <Button fx:id="button21" layoutY="25.0" mnemonicParsing="false" onAction="#pressBut21"
+                            text="press me">
+                    </Button>
+                    <Button fx:id="button22" layoutY="60.0" mnemonicParsing="false" onAction="#pressBut22"
+                            text="no, press me"/>
+                </AnchorPane>
+            </TitledPane>
+            <TitledPane animated="false" text="test #3">
+                <graphic>
+                    <Button fx:id="button3" mnemonicParsing="false" onAction="#pressBut3" text="press me"/>
+                </graphic>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <TextField fx:id="textField3"/>
+                    <RadioButton fx:id="radioButton1" layoutY="30.0" mnemonicParsing="false" text="1"/>
+                    <RadioButton fx:id="radioButton2" layoutY="60.0" mnemonicParsing="false" text="2"/>
+                    <RadioButton fx:id="radioButton3" layoutY="90.0" mnemonicParsing="false" text="3"/>
+                </AnchorPane>
+            </TitledPane>
+            <TitledPane animated="false" text="test #4">
+                <graphic>
+                    <Button fx:id="button4" mnemonicParsing="false" onAction="#pressBut4" text="press me"/>
+                </graphic>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <TextField fx:id="textField4"/>
+                    <CheckBox fx:id="checkBox1" layoutY="30.0" mnemonicParsing="false" text="1"/>
+                    <CheckBox fx:id="checkBox2" layoutY="60.0" mnemonicParsing="false" text="2"/>
+                    <CheckBox fx:id="checkBox3" layoutY="90.0" mnemonicParsing="false" text="3"/>
+                </AnchorPane>
+            </TitledPane>
+            <TitledPane animated="false" text="test #5">
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <TextField fx:id="textField5" layoutX="120.0"/>
+                    <TableView fx:id="table5" editable="true" layoutY="31.0" prefHeight="199.0" prefWidth="302.0">
+                        <columns>
+                            <TableColumn fx:id="col1" prefWidth="156.0" text="First"/>
+                            <TableColumn fx:id="col2" prefWidth="145.0" text="Second"/>
+                        </columns>
+                    </TableView>
+                    <Button fx:id="button51" mnemonicParsing="false" onAction="#pressBut51" text="1"/>
+                    <Button fx:id="button52" layoutX="40.0" mnemonicParsing="false" text="2"
+                            onAction="#pressBut52"/>
+                    <Button fx:id="button53" layoutX="80.0" mnemonicParsing="false" text="3"
+                            onAction="#pressBut53"/>
+                </AnchorPane>
+            </TitledPane>
+        </panes>
+    </Accordion>
 </GridPane>
